@@ -1,0 +1,96 @@
+/* Start Slider */
+
+:root {
+    --main-color: #d3995f;
+    --second-color: #292929;
+}
+
+div.slider {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(41, 41, 41, 0.1);
+}
+
+div.slider div.container {
+    position: relative;
+}
+
+div.slider div.container img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+div.slider div.container span.previous {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+div.slider div.container span.next {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+div.slider div.container span.description {
+    width: calc(100% - 30px);
+    height: 500px;
+    position: absolute;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    transition: 0.6s;
+}
+
+div.slider div.container span.description h5 {
+    font-size: 40px !important;
+    margin: 15px 0;
+    text-align: center;
+}
+
+div.slider div.container span.description p {
+    width: 60%;
+    line-height: 1.8;
+    text-align: center;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+@media (max-width: 991px) {
+    div.slider div.container span.description h5 {
+        font-size: 25px;
+    }
+    div.slider div.container span.description p {
+        width: 100%;
+        font-size: 14px;
+    }
+    div.slider div.container span.previous {
+        left: 0;
+    }
+    div.slider div.container span.next {
+        right: 0;
+    }
+}
+
+
+/* End Slider */

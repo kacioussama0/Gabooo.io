@@ -1,0 +1,66 @@
+form.login {
+    width: 60%;
+    height: 600px;
+    position: absolute;
+    background-color: rgba(41, 41, 41);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: slide 0.4s ease-in-out backwards;
+}
+
+form.login h4 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin: 0;
+}
+
+form.login input[type=email],
+form.login input[type=password] {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #fafafa;
+    background-color: transparent;
+    padding: 0 10px;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.6s;
+}
+
+form.login input[type=email]:focus,
+form.login input[type=password]:focus {
+    outline: none;
+}
+
+form.login button {
+    padding: 15px 40px;
+    background-color: #d3995f;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    display: block;
+    transition: 0.6s;
+}
+
+form.login button:hover {
+    background-color: #a07143;
+}
+
+@keyframes slide {
+    from {
+        left: -200%;
+    }
+    to {
+        left: 50%;
+    }
+}

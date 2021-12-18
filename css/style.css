@@ -1,0 +1,226 @@
+*::selection {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d3995f;
+    border-radius: 5Px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #af7f4f;
+}
+
+
+/* End Customize Scroll Bar */
+
+
+/* Start Global Rules */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #d3995f;
+    --second-color: #292929;
+}
+
+.active {
+    color: var(--main-color) !important;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+div.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+    div.container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    div.container {
+        width: 950px;
+    }
+}
+
+@media (min-width: 1200px) {
+    div.container {
+        width: 1170px;
+    }
+}
+
+
+/* End Global Rules */
+
+
+/* Start Header */
+
+header {
+    width: 100%;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    background-color: #fff;
+    z-index: 2;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+header div.container {}
+
+header div.container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div.container img.logo {}
+
+header div.container div.links {
+    position: relative;
+}
+
+header div.container div.links span.burger-menu {
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+header div.container div.links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+header div.container div.links ul li {
+    margin-right: 25px;
+    font-weight: 600;
+}
+
+header div.container div.links ul li:nth-child(6) {
+    margin-left: 25px;
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+header div.container div.links ul li:nth-child(7) {
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+header div.container div.links ul li:nth-child(6) a,
+header div.container div.links ul li:nth-child(7) a {
+    color: #fff;
+}
+
+header div.container div.links ul li:nth-child(6):hover,
+header div.container div.links ul li:nth-child(7):hover {
+    background-color: #aa7a49;
+}
+
+header div.container div.links ul li:nth-child(6) a:hover,
+header div.container div.links ul li:nth-child(7) a:hover {
+    color: #fff;
+}
+
+header div.container div.links ul li a {
+    text-decoration: none;
+    color: var(--second-color);
+    transition: 0.3s;
+}
+
+header div.container div.links ul li a:hover {
+    color: var(--main-color);
+}
+
+@media(max-width: 991px) {
+    header div.container div.links {
+        position: relative;
+    }
+    header div.container div.links span.burger-menu {
+        display: block;
+    }
+    header div.container div.links ul {
+        flex-direction: column;
+        position: absolute;
+        display: none;
+        left: 50%;
+        transform: translate(-85%, 10px);
+        top: 50px;
+        padding: 20px 40px;
+        border-radius: 5px;
+        background: var( --second-color);
+        color: #fff;
+    }
+    header div.container div.links:hover ul {
+        display: flex;
+    }
+    header div.container div.links ul li {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    header div.container div.links ul li a {
+        color: #fff;
+    }
+    header div.container div.links ul li:nth-child(6) {
+        display: none;
+    }
+    header div.container div.links ul li:nth-child(7) {
+        display: none;
+    }
+}
+
+
+/* End Header */
+
+
+/* Start Footer */
+
+footer {
+    width: 100%;
+    padding: 15px 0;
+    position: fixed;
+    color: #fff;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background-color: var(--second-color);
+}
+
+footer div.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* End Footer */
