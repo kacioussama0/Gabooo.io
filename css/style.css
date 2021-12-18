@@ -77,13 +77,8 @@ div.container {
 
 header {
     width: 100%;
-    padding: 15px 0;
-    position: fixed;
-    top: 0;
-    left: 50%;
+    padding: 20px 0;
     background-color: #fff;
-    z-index: 2;
-    transform: translateX(-50%);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -168,6 +163,7 @@ header div.container div.links ul li a:hover {
     }
     header div.container div.links span.burger-menu {
         display: block;
+        transition: 0.3s;
     }
     header div.container div.links ul {
         flex-direction: column;
@@ -179,11 +175,12 @@ header div.container div.links ul li a:hover {
         padding: 20px 40px;
         border-radius: 5px;
         background: var( --second-color);
+        z-index: 9999;
         color: #fff;
     }
-    header div.container div.links:hover ul {
+    /* header div.container div.links:hover ul {
         display: flex;
-    }
+    } */
     header div.container div.links ul li {
         margin: 0;
         margin-bottom: 15px;
@@ -220,6 +217,37 @@ footer div.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+footer div.container span i {
+    margin-right: 15px;
+}
+
+@media(max-width: 767px) {
+    footer {
+        width: 100%;
+        padding: 15px 0;
+        position: static;
+        color: #fff;
+        left: 0;
+        bottom: 0;
+        transform: translateX(0);
+    }
+    footer div.container {
+        flex-direction: column;
+    }
+    footer div.container img {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    footer div.container span {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    footer div.container p {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
 }
 
 

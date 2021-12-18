@@ -9,7 +9,6 @@
 div.landing-page {
     position: absolute;
     left: 50%;
-    padding: 100px 0;
     top: 50%;
     transform: translate(-50%, -50%)
 }
@@ -112,6 +111,23 @@ div.right img {
     height: 100%;
     object-fit: cover;
     object-position: top center;
+}
+
+@media (max-width: 767px) {
+    div.landing-page {
+        position: static;
+        left: 50%;
+        padding: 120px 0;
+        top: 50%;
+        margin: 50px 0px;
+        transform: translate(0, 0);
+    }
+    div.landing-page h1 {
+        font-size: 30px !important;
+    }
+    div.landing-page div.left p {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 991px) {

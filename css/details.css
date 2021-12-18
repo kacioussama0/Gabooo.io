@@ -76,6 +76,15 @@ div.slider div.container span.description p {
     margin: 15px 0;
 }
 
+@media (max-width: 767px) {
+    div.slider {
+        position: relative;
+        left: 0;
+        transform: translate(0);
+        margin: 50px 0;
+    }
+}
+
 @media (max-width: 991px) {
     div.slider div.container span.description h5 {
         font-size: 25px;
